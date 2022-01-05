@@ -2,6 +2,7 @@
 /* вторичный цвет текста #757575 */
 /* акцент  #2196F3 */
 /* фон #FFFFFF */
+/* цвет текста и кнопок #FFFFFF */
 /* фон футера #2F303A */
 /* вторичный фон секций #F5F4FA */
 /* цвет ссылок в футере rgba(255, 255, 255, 0.6) */
@@ -11,6 +12,7 @@
   --secondary-text-color: #212121;
   --accent: #2196f3;
   --background-color: #ffffff;
+  --button-text-color: #ffffff;
   --footer-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --footer-links-color: rgba(255, 255, 255, 0.6);
@@ -18,8 +20,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
@@ -97,11 +97,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--button-text-color);
 }
 
 .button {
-  color: #ffffff;
+  color: var(--button-text-color);
   background-color: var(--accent);
 }
 
@@ -168,7 +168,7 @@ body {
 }
 
 .white-logo {
-  color: #ffffff;
+  color: var(--button-text-color);
 }
 
 .address {
@@ -208,7 +208,7 @@ body {
 
 .filter-buttons:hover,
 .filter-buttons:focus {
-  color: #ffffff;
+  color: var(--button-text-color);
   background-color: var(--accent);
 }
 
